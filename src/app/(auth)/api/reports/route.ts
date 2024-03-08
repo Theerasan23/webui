@@ -31,7 +31,7 @@ const data = [
 ]
 
 
-export async function GET (req: Response) : Promise<any> {
+export async function GET (req : Request) : Promise<any> {
 
    
 

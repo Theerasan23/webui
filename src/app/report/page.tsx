@@ -4,7 +4,7 @@ import Link from "next/link";
 export default  async function Report(){
 
 
-    const get_ap =  await fetch("http://localhost:3000/api/reports" , {cache: "no-store"});
+    const get_ap =  await fetch("http://localhost:4000/api/reports" , {cache: "no-store"});
     const data_api = JSON.stringify( await get_ap.json());
     const user = JSON.parse(data_api);
    

@@ -35,12 +35,14 @@ export async function login(state : any, formData: FormData) {
 
     const data_body = { "username" : username?.toString , "password": password?.toString }
 
-    const response = await fetch('http://localhost:3000/api/login' , {
+    // const response = await fetch('http://localhost:3000/api/login' , {
 
-        method: 'POST',
-        body: JSON.stringify(data_body)
+    //     method: 'POST',
+    //     body: JSON.stringify(data_body)
     
-    });
+    // });
+
+    const response = await fetch('http://localhost:4000/api/login');
 
 
     const data = JSON.stringify( await response.json() );

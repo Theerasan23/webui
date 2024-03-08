@@ -9,13 +9,9 @@ const data = [{
     "email": "data.timemachine@proton.com"
    }]
 
-export async function GET ( req : Response){
-   
+export async function GET(request: Request) {
+
     return new Response(JSON.stringify(data))
-}
-
-export async function POST():Promise<any>{
-
 
 
 }
