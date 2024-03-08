@@ -9,6 +9,12 @@ const data = [{
     "email": "data.timemachine@proton.com"
    }]
 
+const data2 = {
+    "id": 1,
+    "user": "theerasan",
+    "password": "1234",
+}
+
 export async function GET(request: Request) {
 
     return new Response(JSON.stringify(data))
